@@ -15,6 +15,6 @@ while True:
 
 if quantidade > 0:
         media = soma / quantidade
-        print (f"A media dos números que você informou é: {media}")
+        print (f"A media dos números que você informou é: {media:.2}")
 else:
         print("Você informou um número negativo, tente novamente")
