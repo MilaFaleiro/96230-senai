@@ -3,6 +3,8 @@ os. system("clear")
 
 valor = 0
 total = 0
+lista_pratos = []
+
 while True:
     menu = int(input("""
 Olá seja bem vindo, escolha seu prato: \n
@@ -22,31 +24,40 @@ CÓDIGO  |    DESCRIÇÃO    | Valor
         case 1:
             print("Você escolheu lasanha")
             valor = 25.00
+            prato = "Lasanha"
         case 2:
             print("Você escolheu pizza")
             valor = 30.00
+            prato = "Pizza"
         case 3:
             print("Você escolheu Hambúrguer")
             valor = 18.00
+            prato = "Hambúrguer"
         case 4:
             print("Você escolheu salada")
             valor = 15.00
+            prato = "Salada"
         case 5:
             print("Você escolheu sushi")
             valor = 35.00
+            prato = "Sushi"
         case 6:
             print("Você escolheu musse")
             valor = 6.00
+            prato = "Musse"
         case 7:
             print("Você escolheu bife com fritas")
             valor = 28.00
+            prato = "Bife com fritas"
         case 0: 
             print(f"\nTotal do pedido: {valor:.2f}")
             break
         case _:
             print ("\nDesculpe, não existe essa opção. Digite novamente.")
 
+    lista_pratos.append(prato)
     total += valor
+
     continuar = input("\nDeseja adicionar mais um pedido? (s/n): ").strip().lower()
 
     if continuar == "s":
@@ -71,6 +82,9 @@ CÓDIGO  |    DESCRIÇÃO    | Valor
         print(f"\nTotal: R$ {valor_acrescimo:.2f}")
     else:
         print("\nOpção inválida.")
+
+    for prato in lista_pratos:
+        print(f"Seu prato escolhido foi: {prato}")
 
     print("\nPedido finalizado com sucesso. Muito obrigado!! Volte sempre.")
     break
