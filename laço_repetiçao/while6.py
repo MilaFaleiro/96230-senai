@@ -2,22 +2,21 @@ import os
 os. system("clear")
 
 while True:
-    print("""
+    opçao = int(input("""
 CÓDIGO  | DESCRIÇÃO
     1   | Adicionar pessoa
     2   | Exibir Resultados
     3   | Sair
     
-""")
-    opçao = int(input())
+"""))
     match opçao:
         case 1:
             quantidade = int(input(f"Digite a quantidade de pessoas: "))
             for i in range (quantidade):
                 
-                idade = int(input("Digite sua {i+1}º idade: "))
+                idade = int(input("Digite sua idade: "))
                 salario = int(input("Digite seu salário: "))
-                sexo = int(input("Qual o seu gênero? \nDigite 'f' ou 'm': ")).upper()
+                sexo = input("Qual o seu gênero? \nDigite 'f' ou 'm': ").upper ()
                 
                 media_salario += salario
                 

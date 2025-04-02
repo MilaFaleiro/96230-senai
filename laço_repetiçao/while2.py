@@ -38,6 +38,6 @@ Código \t Prato \t Valor
     
     continuar = input("Deseja pedir outro prato? Digite 1 para Sim e 2 para não ")
     
-    if continuar == "1":
-        
+    if continuar == "2":
+        print (f"A soma é {soma}")
         break
