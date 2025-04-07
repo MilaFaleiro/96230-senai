@@ -2,7 +2,7 @@ import os
 
 def logo_senai():
     os.system ("clear")
-    print("---SENAI DENDEZEIROS---")
+    print("--- SENAI DENDEZEIROS ---")
 
 def somar (n1,n2) :
     return n1 + n2
@@ -31,4 +31,4 @@ logo_senai()
 print(f"Soma: {soma}")
 print(f"Subtração: {subtraçao}")
 print(f"Multiplicação: {multiplicaçao}")
-print(f"Divisão: {divisao}")
+print(f"Divisão: {divisao:.2f}")
