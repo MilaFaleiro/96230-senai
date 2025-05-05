@@ -11,4 +11,4 @@ for i in range(5):
 
     else:
         valor = lista
-print(f"Valor" {lista}) 
+print("Valor" , lista)
